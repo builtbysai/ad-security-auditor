@@ -1,0 +1,6 @@
+"SamAccountName","DistinguishedName","GroupCategory","GroupScope"
+"Domain Admins","CN=Domain Admins,CN=Users,DC=example,DC=local","Security","Global"
+"Enterprise Admins","CN=Enterprise Admins,CN=Users,DC=example,DC=local","Security","Universal"
+"HR Users","CN=HR Users,OU=Groups,DC=example,DC=local","Security","Global"
+"Marketing Users","CN=Marketing Users,OU=Groups,DC=example,DC=local","Security","Global"
+"IT Admins","CN=IT Admins,OU=Groups,DC=example,DC=local","Security","Global"
