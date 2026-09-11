@@ -52,3 +52,7 @@ Invoke-Pester -Path .\Tests\
 
 ## License
 MIT License
+
+---
+
+*Built by [Hans Sai](https://builtbysai.com).*
