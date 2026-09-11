@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="660" viewBox="0 0 960 660">
+  <defs>
+    <pattern id="scanA" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1.2" y="0" fill="#ffffff" opacity="0.022"/>
+    </pattern>
+    <linearGradient id="sheenA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1210"/>
+      <stop offset="1" stop-color="#070b08"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="956" height="656" rx="14" fill="url(#sheenA)" stroke="#1d3a26" stroke-width="2"/>
+  <rect x="2" y="2" width="956" height="656" rx="14" fill="url(#scanA)"/>
+
+  <circle cx="30" cy="30" r="6.5" fill="#ff5f57"/>
+  <circle cx="52" cy="30" r="6.5" fill="#febc2e"/>
+  <circle cx="74" cy="30" r="6.5" fill="#28c840"/>
+  <text x="480" y="35" text-anchor="middle" font-family="Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13" fill="#7ba98c">pwsh — ADSecurityAuditor</text>
+  <rect x="836" y="19" width="92" height="22" rx="11" fill="#0f2417" stroke="#2fae5f"/>
+  <text x="882" y="35" text-anchor="middle" font-family="Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="11" fill="#33ff66" letter-spacing="1">READ-ONLY</text>
+  <line x1="2" y1="52" x2="958" y2="52" stroke="#1d3a26" stroke-width="1"/>
+
+  <g font-family="Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="14.5">
+    <text x="34" y="94"><tspan fill="#4da3ff">PS C:\audit&gt; </tspan><tspan fill="#e9f5ec">.\Invoke-ADSecurityAudit.ps1 -UsersCsv ".\SampleData\users.csv" \</tspan></text>
+    <text x="148" y="120" fill="#e9f5ec">-GroupsCsv ".\SampleData\groups.csv" -ComputersCsv ".\SampleData\computers.csv" \</text>
+    <text x="148" y="146" fill="#e9f5ec">-ReportFolder ".\Reports"</text>
+
+    <text x="34" y="188" fill="#7ba98c">Loading data...</text>
+    <text x="34" y="214" fill="#7ba98c">Running tests...</text>
+
+    <text x="34" y="256" fill="#54705f">check results — sample dataset</text>
+    <text x="34" y="284"><tspan fill="#33ff66">»</tspan><tspan fill="#d8e6dc"> Test-StaleAccounts ............... </tspan><tspan fill="#ffd166" font-weight="bold">5 findings</tspan><tspan fill="#54705f">  (3 users, 2 computers)</tspan></text>
+    <text x="34" y="310"><tspan fill="#33ff66">»</tspan><tspan fill="#d8e6dc"> Test-PasswordNeverExpires ........ </tspan><tspan fill="#ffd166" font-weight="bold">2 findings</tspan></text>
+    <text x="34" y="336"><tspan fill="#33ff66">»</tspan><tspan fill="#d8e6dc"> Test-OldPasswordAge .............. </tspan><tspan fill="#ffd166" font-weight="bold">4 findings</tspan><tspan fill="#54705f">  (&gt;365 days)</tspan></text>
+    <text x="34" y="362"><tspan fill="#33ff66">»</tspan><tspan fill="#d8e6dc"> Test-PrivilegedGroupMembership .... </tspan><tspan fill="#ff4d5e" font-weight="bold">5 findings</tspan><tspan fill="#54705f">  (unexpected admins)</tspan></text>
+    <text x="34" y="388"><tspan fill="#33ff66">»</tspan><tspan fill="#d8e6dc"> Test-OutdatedOS .................. </tspan><tspan fill="#ff9f1c" font-weight="bold">2 findings</tspan><tspan fill="#54705f">  (Win7, Server 2008 R2)</tspan></text>
+    <text x="34" y="414"><tspan fill="#33ff66">»</tspan><tspan fill="#d8e6dc"> Test-DuplicateSPNs ................. </tspan><tspan fill="#ff9f1c" font-weight="bold">2 findings</tspan><tspan fill="#54705f">  (Kerberos hygiene)</tspan></text>
+
+    <text x="34" y="456"><tspan fill="#e9f5ec">Discovered </tspan><tspan fill="#ff4d5e" font-weight="bold">20 findings.</tspan></text>
+    <text x="34" y="482" fill="#7ba98c">Generating reports...</text>
+    <text x="34" y="508"><tspan fill="#54705f">  CSV  </tspan><tspan fill="#9db8a6">Reports\AuditFindings_20260911_193000.csv</tspan></text>
+    <text x="34" y="534"><tspan fill="#54705f">  JSON </tspan><tspan fill="#9db8a6">Reports\AuditFindings_20260911_193000.json</tspan></text>
+    <text x="34" y="560"><tspan fill="#54705f">  HTML </tspan><tspan fill="#9db8a6">Reports\AuditFindings_20260911_193000.html</tspan><tspan fill="#54705f">  (dark-themed)</tspan></text>
+    <text x="34" y="596" fill="#33ff66">Audit complete. Reports saved to .\Reports</text>
+  </g>
+
+  <line x1="34" y1="616" x2="926" y2="616" stroke="#1d3a26" stroke-width="1"/>
+  <text x="480" y="638" text-anchor="middle" font-family="Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="12" fill="#54705f">◈ read-only · offline CSV analysis · no live domain connection · PowerShell 5.1 · nothing modified</text>
+</svg>
