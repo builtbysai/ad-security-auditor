@@ -2,7 +2,7 @@
 
 A PowerShell 5.1-compatible toolkit designed to audit Active Directory security posture from exported data (CSV/JSON). This tool runs entirely offline without requiring a live domain connection, making it perfect for analyzing exported datasets or demonstrating AD security auditing concepts.
 
-<p align="center"><img src="assets/terminal-demo.svg" width="800" alt="PowerShell demo: running Invoke-ADSecurityAudit.ps1 against the sample dataset, 20 findings across 7 checks"></p>
+<p align="center"><img src="assets/terminal-demo.svg" width="800" alt="PowerShell demo: running Invoke-ADSecurityAudit.ps1 against the sample dataset, 16 findings across 7 checks"></p>
 <p align="center"><img src="assets/check-architecture.svg" width="800" alt="Architecture: offline CSV inputs, one orchestrator script, seven modular Test-* check functions, timestamped reports"></p>
 
 ## Features
